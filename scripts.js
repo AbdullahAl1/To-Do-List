@@ -89,7 +89,7 @@ pending_tasks.addEventListener("click",(e)=>{
     let task = e.target.parentElement.parentElement.innerHTML;
     console.log(task);
     e.target.parentElement.parentElement.remove();
-    task = `<div class="task"> ${task} </div>`
+    task = `<div class="task"> ${task} </div>`;
     let pendingTasks = document.querySelector(".completed-tasks ").innerHTML += task
   }
 })

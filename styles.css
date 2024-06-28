@@ -141,3 +141,11 @@ p{
     justify-content: end;
     gap: 10px;
 }
+
+@media only screen and (max-width: 500px) {
+    .task-columns{
+        
+        align-items: center;
+        justify-content: center;
+    }
+}
