@@ -19,6 +19,7 @@ function addTask () {
 </div>
 </div>
 `;
+
     } else if (input[1].value != "" && input[2].value == "") {
       // console.log('2');
       task = `
@@ -84,11 +85,11 @@ pending_tasks = document.querySelector(".pending-tasks")
 
 pending_tasks.addEventListener("click",(e)=>{
   if (e.target.className == "Complete-btn"){
-    console.log("gfijundhbiud");
-    let task = e.target.parentElement.parentElement.parentElement.innerHTML;
-    e.target.parentElement.parentElement.remove();
-    let pendingTasks = document.querySelector(".completed-tasks").innerHTML += task
-    document.querySelector("Complete-btn").innerHTML =""
+    console.log("gvihjkertbnigtuhjnb");
+    let task = e.target.parentElement.parentElement.innerHTML;
     console.log(task);
+    e.target.parentElement.parentElement.remove();
+    task = `<div class="task"> ${task} </div>`
+    let pendingTasks = document.querySelector(".completed-tasks ").innerHTML += task
   }
 })
