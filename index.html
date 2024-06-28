@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do list</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="to-do-app">
+            <div class="top">
+                <h2>To-Do List</h2>
+                <img src="./to-do-list.png" alt="" class="image" />
+            </div>
+            <div class="row">
+                <input type="text" class="input-box description" placeholder="Task description" />
+                <input type="date" id="task-time" />
+                <input type="text" class="input-box" placeholder="Assign to" />
+                <button class="add-btn">add</button>
+            </div>
+
+            <div class="task-columns">
+                <div class="column" id="pending-tasks">
+                    <h2>Pending</h2>
+                    <div class="task-list pending-tasks">
+
+                        <div class="task">
+                            <div>
+                                <p class="task-description">push some code</p>
+                                <p class="Date">Date: </p>
+                                <p class="assigned-to">Assigned to: </p>
+                            </div>
+                            <div class="button">
+                                <button class="Complete-btn">Complete</button>
+                                <button class="Delete-btn">Delete</button>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="column" id="completed-tasks">
+                    <h2>Completed</h2>
+                    <div class="task-list completed-tasks">
+                        <div class="task">
+                            <div>
+                                <p class="task-description">push some code</p>
+                                <p class="Date">Date: </p>
+                                <p class="assigned-to">Assigned to: </p>
+                            </div>
+                            <div class="button">
+                                <button class="Complete-btn">Complete</button>
+                                <button class="Delete-btn">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column" id="past-due-tasks">
+                    <h2>Past Due</h2>
+                    <div class="task-list past-due-tasks">
+                        
+                        <div class="task">
+                            <div>
+                                <p class="task-description">push some code</p>
+                                <p class="Date">Date: </p>
+                                <p class="assigned-to">Assigned to: </p>
+                            </div>
+                            <div class="button">
+                                <button class="Complete-btn">Complete</button>
+                                <button class="Delete-btn">Delete</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./scripts.js"></script>
+</body>
+
+</html>
